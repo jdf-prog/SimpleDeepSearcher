@@ -1,0 +1,61 @@
+All outputs length statistics:
+mean: 4032.097087378641
+std: 3558.931560827169
+median: 2951.0
+min: 549
+max: 20480
+25th_percentile: 1622.5
+75th_percentile: 4557.5
+
+Retrieval outputs length statistics:
+mean: 3360.714285714286
+std: 2336.640718411535
+median: 2879.0
+min: 549
+max: 11030
+25th_percentile: 1536.5
+75th_percentile: 4177.5
+
+No retrieval outputs length statistics:
+mean: 7000.315789473684
+std: 5807.015213493994
+median: 5235.0
+min: 947
+max: 20480
+25th_percentile: 2124.0
+75th_percentile: 10718.0
+
+
+Proportion of samples without retrieval: 0.18446601941747573
+Proportion of samples with retrieval: 0.8155339805825242
+model_path: Qwen/Qwen3-8B
+data_path: output/qwen3-8b/gaia/turn_15.json
+Overall Mean Metrics:
+em: 0.3106796116504854
+ac: 0.33980582524271846
+f1: 0.35573043344254823
+reason: 0.49514563106796117
+search: 0.4854368932038835
+analyse: 0.3300970873786408
+search_count: 2.5436893203883497
+output_len: 4032.097087378641
+
+Mean Metrics for Samples with Retrieval:
+em: 0.34523809523809523
+ac: 0.38095238095238093
+f1: 0.3905583489434421
+reason: 0.5119047619047619
+search: 0.5952380952380952
+analyse: 0.40476190476190477
+search_count: 3.119047619047619
+output_len: 3360.714285714286
+
+Mean Metrics for Samples without Retrieval:
+em: 0.15789473684210525
+ac: 0.15789473684210525
+f1: 0.2017543859649123
+reason: 0.42105263157894735
+search: 0.0
+analyse: 0.0
+search_count: 0.0
+output_len: 7000.315789473684

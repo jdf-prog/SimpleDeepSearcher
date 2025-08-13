@@ -353,6 +353,16 @@ python -u inference/inference.py \
     --summarization_model_url YOUR_SUMMARIZATION_MODEL_URL \
     --google_subscription_key YOUR_KEY \
     --google_endpoint "https://google.serper.dev/search" > output/output.log  2>&1
+
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -u inference/inference.py \
+    --dataset_name gaia \
+    --cache_dir_base cache \
+    --output_dir_base output \
+    --model_path "Qwen/Qwen2.5-7B-Instruct" \
+    --summarization_model_path Qwen/QwQ-32B \
+    --summarization_model_url http://0.0.0.0:8000/v1 \
+    --google_subscription_key "59db8d5898aebc4cd59f02b2236c93c6313c1b5e" \
+    --google_endpoint "https://google.serper.dev/search" > output/output.log  2>&1
 ```
 
 

@@ -256,7 +256,7 @@ def google_web_search(query, subscription_key, endpoint, market='en-US', languag
             break
         try:
             # 发送POST请求
-            response = requests.request("POST", endpoint, headers=headers, data=payload, proxies=proxies, timeout=timeout)
+            response = requests.request("POST", endpoint, headers=headers, data=payload, timeout=timeout)
             # response = requests.request("POST", endpoint, headers=headers, data=payload, timeout=timeout)
             response.raise_for_status()  # Raise exception if the request failed 检查响应的状态码。如果返回的状态码是 4xx 或 5xx（表示客户端或服务器错误），它将引发 requests.exceptions.HTTPError 异常
             search_results = response.json() #
